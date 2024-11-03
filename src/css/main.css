@@ -1,0 +1,166 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f64f59, #c471ed, #12c2e9);
+  }
+  
+  .all {
+    max-width: 800px;
+    width: 90%;
+    padding: 20px;
+    margin: 20px auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .profile {
+    border-radius: 50%;
+    padding: 5px;
+    background: linear-gradient(135deg, #f64f59, #c471ed, #12c2e9);
+    display: inline-block;
+  }
+  
+  .profile img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    transition: transform 0.3s;
+    background-clip: padding-box;
+    display: block;
+  }
+  
+  .profile img:hover {
+    transform: scale(1.1);
+  }
+  
+  .contact {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-top: 10px;
+    overflow-x: auto;
+    padding: 10px 0;
+  }
+  
+  .contact a {
+    margin: 0 5px;
+  }
+  
+  .contact a img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .contact a img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  }
+  
+  .text h1 {
+    font-size: 2em;
+    margin: 10px 0;
+  }
+  
+  .text h2 {
+    font-size: 1.5em;
+    margin: 5px 0;
+  }
+  
+  .text p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin: 15px 0;
+  }
+  
+  @media (max-width: 768px) {
+    .profile img {
+      width: 150px;
+      height: 150px;
+    }
+  
+    .contact a img {
+      width: 40px;
+      height: 40px;
+    }
+  
+    .text h1 {
+      font-size: 1.8em;
+    }
+  
+    .text h2 {
+      font-size: 1.3em;
+    }
+  
+    .text p {
+      font-size: 0.9em;
+    }
+  
+    .all {
+      padding: 15px;
+      margin: 15px;
+    }
+  }
+  
+  @media (max-width: 375px) {
+    .profile img {
+      width: 100px; 
+      height: 100px;
+    }
+  
+    .contact {
+      flex-wrap: nowrap;
+      overflow-x: auto;
+    }
+  
+    .contact a {
+      margin: 0 5px;
+    }
+  
+    .contact a img {
+      width: 40px;
+      height: 40px;
+    }
+  
+    .text h1 {
+      font-size: 1.5em;
+    }
+  
+    .text h2 {
+      font-size: 1.2em;
+    }
+  
+    .text p {
+      font-size: 0.9em;
+      line-height: 1.4;
+    }
+  
+    .all {
+      padding: 10px;
+      margin: 10px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .profile img {
+      width: 120px;
+      height: 120px;
+    }
+  
+    .contact a img {
+      width: 40px;
+      height: 40px;
+    }
+  }  
