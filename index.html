@@ -1,46 +1,60 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vinithorn S.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#101517" />
+    <meta name="description" content="Meet Vinithorn Sawangwong — IT enthusiast, photographer, and video editor." />
+    <title>Vinithorn S. · Thunder.Sowilo</title>
+    <link rel="icon" href="favicon-32x32.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="src/css/main.css" />
-    <link rel="stylesheet" href="https://raw.githubusercontent.com/Thunder-Sowilo/NFC-Card-website/main/src/css/main.css" />
-    <link rel="icon"href="/favicon-32x32.png"type="image/x-icon"/>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div class="all">
-      <div class="profile">
-        <img src="https://raw.githubusercontent.com/Thunder-Sowilo/NFC-Card-website/main/src/img/porfile.jpg" alt="Profile Picture" />
-      </div>
-      <div class="text">
-        <h1>Vinithorn Sawangwong</h1>
-        <h2>Thunder.Sowilo</h2>
-        <p>
-          Hello everyone! Nice to meet you all.<br />
-          I’m an IT guy who can also do photography and video editing.<br />
-          I’m still a newbie, but I hope you’ll support me along the way. Thanks
-          a lot!
-        </p>
-      </div>
-      <div class="contact">
-        <a href="https://www.facebook.com/profile.php?id=100009259282189">
-          <img src="https://raw.githubusercontent.com/Thunder-Sowilo/NFC-Card-website/main/src/img/communication.png" alt="Facebook" />
-      </a>
-      <a href="https://www.instagram.com/thunder.sowilo/">
-          <img src="https://raw.githubusercontent.com/Thunder-Sowilo/NFC-Card-website/main/src/img/social.png" alt="Instagram" />
-      </a>
-      <a href="https://youtube.com/@thunder.sowilo?si=IYNKePCu7XtNXwmr">
-          <img src="https://raw.githubusercontent.com/Thunder-Sowilo/NFC-Card-website/main/src/img/youtube.png" alt="YouTube" />
-      </a>
-      <a href="https://www.tiktok.com/@thunder.sowilo">
-          <img src="https://raw.githubusercontent.com/Thunder-Sowilo/NFC-Card-website/main/src/img/tik-tok.png" alt="TikTok" />
-      </a>
-      <a href="https://github.com/Thunder-Sowilo">
-          <img src="https://raw.githubusercontent.com/Thunder-Sowilo/NFC-Card-website/main/src/img/github-logo.png" alt="GitHub" />
-      </a>
-      </div>
-    </div>
+    <main class="page-shell">
+      <article class="profile-card" aria-labelledby="profile-name">
+        <div class="card-orbit card-orbit--one" aria-hidden="true"></div>
+        <div class="card-orbit card-orbit--two" aria-hidden="true"></div>
+
+        <div class="profile-photo-wrap">
+          <img class="profile-photo" src="src/img/porfile.jpg" alt="Profile Picture" />
+          <span class="photo-status" aria-hidden="true"></span>
+        </div>
+
+        <section class="profile-copy" aria-label="About me">
+          <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span> DIGITAL INTRODUCTION</p>
+          <h1 id="profile-name">Vinithorn Sawangwong</h1>
+          <p class="handle">Thunder.Sowilo</p>
+          <p class="bio">
+            Hello everyone! Nice to meet you all.<br />
+            I’m an IT guy who can also do photography and video editing.<br />
+            I’m still a newbie, but I hope you’ll support me along the way. Thanks a lot!
+          </p>
+        </section>
+
+        <nav class="social-links" aria-label="Social media links">
+          <a class="social-link" href="https://www.facebook.com/profile.php?id=100009259282189" aria-label="Facebook">
+            <img src="src/img/communication.png" alt="" />
+          </a>
+          <a class="social-link" href="https://www.instagram.com/thunder.sowilo/" aria-label="Instagram">
+            <img src="src/img/social.png" alt="" />
+          </a>
+          <a class="social-link" href="https://youtube.com/@thunder.sowilo?si=IYNKePCu7XtNXwmr" aria-label="YouTube">
+            <img src="src/img/youtube.png" alt="" />
+          </a>
+          <a class="social-link" href="https://www.tiktok.com/@thunder.sowilo" aria-label="TikTok">
+            <img src="src/img/tik-tok.png" alt="" />
+          </a>
+          <a class="social-link" href="https://github.com/Thunder-Sowilo" aria-label="GitHub">
+            <img src="src/img/github-logo.png" alt="" />
+          </a>
+        </nav>
+
+        <p class="card-caption"><span aria-hidden="true">✳</span> CONNECT WITH ME</p>
+      </article>
+      <p class="page-note">A little corner of the internet by <span>Thunder.Sowilo</span></p>
+    </main>
   </body>
 </html>
